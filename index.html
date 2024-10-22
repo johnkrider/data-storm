@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
   <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
   <title>عواصف البينات</title>
 </head>
+
 <body dir="rtl">
   <header>
     <div class="container">
@@ -14,22 +16,75 @@
         <p>
           عواصف البينات
         </p>
-      </div>  
-      <div class="links">
-        <ul>
-          <li><a href="">أدوات</a></li>
-          <li><a href="">مشاريع</a></li>
-          <li><a href="">عمل حر</a></li>
-        </ul>
       </div>
+      <button id="pop">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
   </header>
+  <div id="menu" class="links">
+    <ul>
+      <li><a href="#tools">أدوات</a></li>
+      <li><a href="">مشاريع</a></li>
+      <li><a href="">عمل حر</a></li>
+    </ul>
+  </div>
   <div class="welcome">
-    <div class="blur-container"></div>
+    <div class="blur-container">
       <div class="blur"></div>
       <img class="background" src="imgs/java working logo.png" alt="">
     </div>
     <p></p>
   </div>
+  <div id="tools" class="tools">
+    <h1>الأدوات</h1>
+    <div class="container">
+      <div class="tool">
+        <h3>البرمجيات</h3>
+          <div class="blur-container">
+            <div class="blur-protect"></div>
+            <img class="background" src="imgs/programming/java.png" alt="">
+            <img class="background" src="imgs/programming/javafx.png" alt="">
+            <img class="background" src="imgs/programming/SQL.jpg" alt="">
+            <img class="background" src="imgs/programming/mysql.jpg" alt="">
+            <img class="background" src="imgs/programming/sqlite.png" alt="">
+            <img class="background" src="imgs/programming/HJSC.jpg" alt="">
+            <img class="background" src="imgs/programming/vscode.png" alt="">
+            <img class="background" src="imgs/programming/android.jpg" alt="">
+            <img class="background" src="imgs/programming/eclipse.jpg" alt="">
+          </div>
+      </div>
+      <br>
+      <div class="sub-container">
+        <div class="tool">
+          <h3>الصور</h3>
+          <div class="blur-container">
+            <img class="background" src="imgs/programming/android.jpg" alt="">
+            <div class="blur-protect"></div>
+          </div>
+        </div>
+        <div class="tool">
+          <h3>الكتابة</h3>
+            <div class="blur-container">
+              <div class="blur-protect"></div>
+              <img class="background" src="imgs/typing/word.png" alt="">
+            </div>
+        </div>
+        <div class="tool">
+          <h3>الفيديو</h3>
+            <div class="blur-container">
+              <div class="blur-protect"></div>
+              <img class="background" src="imgs/programming/java.png" alt="">
+            </div>
+        </div>
+      </div>
+      </div>
+  </div>
+  </div>
+  </div>
+  <script src="js/header.js"></script>
 </body>
+
 </html>
