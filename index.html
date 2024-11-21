@@ -6,15 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/main.css">
   <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
-  <title>عواصف البينات</title>
+  <title>Visualize</title>
 </head>
 
-<body dir="rtl">
+<body>
   <header>
     <div class="container">
       <div class="logo">
         <p>
-          عواصف البينات
+          Visualize
         </p>
       </div>
       <button id="pop">
@@ -26,9 +26,9 @@
   </header>
   <div id="menu" class="links">
     <ul>
-      <li><a href="#tools">أدوات</a></li>
-      <li><a href="">مشاريع</a></li>
-      <li><a href="">الخدمات</a></li>
+      <li><button id="tool">Tools</button></li>
+      <li><button id="project">Projects</button></li>
+      <li><button id="service">Services</button></li>
     </ul>
   </div>
   <div class="welcome">
@@ -39,43 +39,43 @@
     <p></p>
   </div>
   <div id="tools" class="tools">
-    <h1>الأدوات</h1>
+    <h1>Tools</h1>
     <div class="container">
-      <div class="tool">
-        <h3>البرمجيات</h3>
-          <div class="blur-container">
-            <div class="blur-protect"></div>
-            <img class="background" src="imgs/programming/java.png" alt="">
-            <img class="background" src="imgs/programming/javafx.png" alt="">
-            <img class="background" src="imgs/programming/SQL.jpg" alt="">
-            <img class="background" src="imgs/programming/mysql.jpg" alt="">
-            <img class="background" src="imgs/programming/sqlite.png" alt="">
-            <img class="background" src="imgs/programming/HJSC.jpg" alt="">
-            <img class="background" src="imgs/programming/vscode.png" alt="">
-            <img class="background" src="imgs/programming/android.jpg" alt="">
-            <img class="background" src="imgs/programming/eclipse.jpg" alt="">
-          </div>
-      </div>
       <br>
       <div class="sub-container">
         <div class="tool">
-          <h3>الكتابة</h3>
+          <h3>Programming</h3>
             <div class="blur-container">
               <div class="blur-protect"></div>
-              <img class="background" src="imgs/typing/word.png" alt="">
-              <img class="background" src="imgs/typing/pdf.jpg" alt="">
+              <!-- <img class="background" src="imgs/programming/java.png" alt=""> -->
+              <!-- <img class="background" src="imgs/programming/javafx.png" alt=""> -->
+              <!-- <img class="background" src="imgs/programming/SQL.jpg" alt=""> -->
+              <!-- <img class="background" src="imgs/programming/mysql.jpg" alt=""> -->
+              <!-- <img class="background" src="imgs/programming/sqlite.png" alt=""> -->
+              <img class="background" src="imgs/programming/HJSC.jpg" alt="">
+              <img class="background" src="imgs/programming/vscode.png" alt="">
+              <!-- <img class="background" src="imgs/programming/android.jpg" alt=""> -->
+              <!-- <img class="background" src="imgs/programming/eclipse.jpg" alt=""> -->
             </div>
         </div>
         <div class="tool">
-          <h3>الفيديو</h3>
+          <h3>Writing</h3>
             <div class="blur-container">
               <div class="blur-protect"></div>
-              <img class="background" src="imgs/video/capcut.jpg" alt="">
+              <img class="background" src="imgs/typing/word.jpg" alt="">
+              <img class="background" src="imgs/typing/pdf.png" alt="">
+            </div>
+        </div>
+        <div class="tool">
+          <h3>Videos</h3>
+            <div class="blur-container">
+              <div class="blur-protect"></div>
+              <img class="background" src="imgs/video/inshot.jpg" alt="">
               <img class="background" src="imgs/video/render forest.png" alt="">
             </div>
         </div>
         <div class="tool">
-          <h3>الصور</h3>
+          <h3>Photos</h3>
           <div class="blur-container">
             <img class="background" src="imgs/img/ps.jpg" alt="">
             <div class="blur-protect"></div>
@@ -83,9 +83,36 @@
         </div>
       </div>
       </div>
-  </div>
-  </div>
-  </div>
+    </div>
+    <div id="projects" class="projects">
+      <h2>Projects</h2>
+      <div class="selector">
+        <button id="programming">Programming</button>
+        <button id="image">Image</button>
+        <button id="video">Video</button>
+      </div>
+      <div class="holder">
+        <div id="projects-holder" class="projects-holder">
+          
+        </div>
+      </div>
+    </div>
+    <div id="services" class="services">
+      <h2>Services</h2>
+      <div class="selector">
+        <button id="programmer">Programming</button>
+        <button id="editor">Image</button>
+        <button id="montage">Video</button>
+        <button id="writer">Writing</button>
+      </div>
+      <div class="holder">
+        <div id="services-holder" class="services-holder">
+          
+        </div>
+      </div>
+    </div>
+  <script src="js/projects.js"></script>
+  <script src="js/services.js"></script>
   <script src="js/header.js"></script>
 </body>
 

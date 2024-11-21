@@ -1,3 +1,4 @@
+/* Start Rules */
 :root{
   --main-color : #94c5d9;
   --secondry-color: #00ccff;
@@ -10,6 +11,14 @@
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+}
+button{
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
 }
 a{
   text-decoration: none;
@@ -34,6 +43,8 @@ a{
   z-index: -1;
   width: 100%;
 }
+/* End Rules */
+/* Start Header */
 header{
   width: 100%;
   background-color: var(--main-color);
@@ -68,11 +79,13 @@ header .container p,.links ul li a{
   /* font-size: 28px; */
   font-weight: 900;
 }
+/* End Header */
+/* Start Links */
 .links{
   width: 20%;
   position: fixed;
   top: 51px;
-  left: 0;
+  right: 0;
   height: 95%;
   z-index: 100;
   background-color: var(--main-color);
@@ -95,12 +108,21 @@ header .container p,.links ul li a{
 }
 .links ul li:hover{
   background-color: white;
-  transform: translateX(-10px);
+  transform: translateX(10px);
 }
-.links ul li a:hover{
+.links ul li button{
+  text-align: left;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+.links ul li button:hover{
   color: var(--secondry-color);
-  transform: translateX(-10px);
+  transform: translateX(10px);
 }
+/* End Links */
+/* Start Tools */
 .tools{
   display: flex;
   flex-direction: column;
@@ -122,6 +144,11 @@ header .container p,.links ul li a{
   border: 1px solid black;
   padding: 10px;
 }
+.tools .container .tool h3{
+  color: blue;
+  margin: auto 0 0 0;
+
+}
 .tools .container .tool .blur-container{
   margin-top: 10px;
   display: grid;
@@ -129,21 +156,106 @@ header .container p,.links ul li a{
   grid-template-columns: repeat(9,1fr);
 }
 .tools .container .sub-container{
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
   gap: 1%;
-}
-.tools .container .sub-container .tool{
-  width: 33%;
-
 }
 .tools .container .sub-container .tool .blur-container{
   display: grid;
   grid-template-columns: repeat(2,1fr);
 }
+/* End Tools */
+/* Start Projects */
+.projects{
+  text-align: center;
+  padding: 100px 0;
+  width: 100%;
+  margin: 0 auto;
+  background-color: var(--main-color);
+}
+.projects .selector{
+  margin: 20px auto 0;
+  width: 75%;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  border: 1px solid black;
+  text-align: center;
+}
+.projects .selector button{
+  padding: 10px;
+}
+.projects .holder .projects-holder{
+  border: 1px solid black;
+  padding:20px;
+  display: grid;
+  width: 75%;
+  margin: 0 auto;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill,minmax(330px,1fr));
+  background-color: white;
+}
+.projects .holder .projects-holder .project{
+  border: 2px solid black;
+  padding: 3px;
+  border-radius: 8px;
+}
+.projects .holder .projects-holder .project .spiltter{
+  display: flex;
+  justify-content: space-evenly;
+}
+.projects .holder .projects-holder .project .spiltter a{
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.projects .holder .projects-holder .project .img-holder img{
+  max-width: 100%;
+}
+/* End Projects */
+/* Start Services */
+.services{
+  text-align: center;
+  padding: 100px 0;
+  width: 75%;
+  margin: 0 auto;
+}
+.services .selector{
+  margin: 20px 0 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  border: 1px solid black;
+  text-align: center;
+}
+.services .selector button{
+  padding: 10px;
+}
+.services .holder .services-holder{
+  border: 1px solid black;
+  padding:20px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill,minmax(330px,1fr));
+}
+.services .holder .services-holder .service{
+  border: 2px solid black;
+  padding: 3px;
+  border-radius: 8px;
+}
+.services .holder .services-holder .service .spiltter{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.services .holder .services-holder .service .spiltter a{
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.services .holder .services-holder .service .img-holder img{
+  max-width: 100%;
+}
+/* End Services */
 @media (max-width:780px) {
-  *{
-    font-size: var(--small-font-size);
-  }
+
   .tools .container .tool .blur-container{
     grid-template-columns: repeat(3,1fr);
   }
@@ -156,5 +268,8 @@ header .container p,.links ul li a{
   }
   .tools .container .sub-container .tool{
     width: 100%;
+  }
+  .projects .selector,.services .selector{
+    grid-template-columns: repeat(2,1fr);
   }
 }
