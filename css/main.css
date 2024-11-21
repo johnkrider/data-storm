@@ -191,7 +191,7 @@ header .container p,.links ul li a{
   width: 75%;
   margin: 0 auto;
   gap: 20px;
-  grid-template-columns: repeat(auto-fill,minmax(330px,1fr));
+  grid-template-columns: repeat(auto-fill,minmax(225px,1fr));
   background-color: white;
 }
 .projects .holder .projects-holder .project{
@@ -234,7 +234,7 @@ header .container p,.links ul li a{
   padding:20px;
   display: grid;
   gap: 20px;
-  grid-template-columns: repeat(auto-fill,minmax(330px,1fr));
+  grid-template-columns: repeat(auto-fill,minmax(225px,1fr));
 }
 .services .holder .services-holder .service{
   border: 2px solid black;
